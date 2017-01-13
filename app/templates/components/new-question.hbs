@@ -1,0 +1,39 @@
+{{#if addNewQuestion}}
+<div class="row">
+  <div class="col s6 offset-s3">
+    <div class="card green lighten-3">
+      <div class="card title green darken-2">
+        <h2>Add a new question</h2>
+      </div>
+      <div class="card-content">
+        <form>
+          <div class="row">
+            <div class="input-field col s6 offset-s3">
+              <label for="content">Question</label>
+              {{input value=content id='content' class="validate"}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6 offset-s3">
+              <label for="notes">Notes</label>
+              {{input value=notes id='notes' class="validate"}}
+            </div>
+          </div>
+        <div class ="row">
+          <div class="input-field col s6 offset-s3">
+            <label for="author">Author</label>
+            {{input value=author id='author' class="validate"}}
+          </div>
+        </div>
+        <a {{action 'saveQuestion'}} class="waves-effect waves-light btn">Save</a>
+        <a {{action 'toggleForm'}} class="waves-effect waves-light btn">Close</a>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{else}}
+<a {{action 'toggleForm' question}} class="waves-effect waves-light btn">Add Question</a>
+{{/if}}

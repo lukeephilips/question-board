@@ -1,0 +1,26 @@
+{{#if showUpdate}}
+<form>
+  <div class="row">
+    <div class="input-field col s6 offset-s3">
+      <label for="content">Question</label>
+      {{input value=content id="content" class="form-control" placeholder=question.content}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s6 offset-s3">
+      <label for="author">Author</label>
+      {{input value=author id="author" class="form-control" placeholder=question.author}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s6 offset-s3">
+      <label for="notes">Notes</label>
+      {{input value=notes id="notes" class="form-control" placeholder=question.notes}}
+    </div>
+  </div>
+  <a {{action 'updateQuestion' question}} class="waves-effect waves-light btn">Save</a>
+  <a {{action 'toggleForm'}} class="waves-effect waves-light btn">Close</a>
+</form>
+{{else}}
+<a {{action 'toggleForm'}} class="waves-effect waves-light btn">Update</a>
+{{/if}}
