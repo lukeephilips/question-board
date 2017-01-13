@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   addNewQuestion: false,
   actions: {
-    toggleForm() {
+    toggleQuestionForm() {
       this.toggleProperty('addNewQuestion');
     },
     saveQuestion(){

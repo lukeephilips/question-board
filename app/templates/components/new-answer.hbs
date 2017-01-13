@@ -1,11 +1,5 @@
 {{#if addNewAnswer}}
-<div class="row">
-  <div class="col s8 offset-s2">
-    <div class="card green lighten-3">
-      <div class="card title green darken-2">
-        <h2>Add a new answer</h2>
-      </div>
-      <div class="card-content">
+        <h3>Add a new answer</h3>
         <form>
           <div class="row">
             <div class="input-field col s10 offset-1">
@@ -20,14 +14,8 @@
           </div>
         </div>
         <a {{action 'saveAnswer'}} class="waves-effect waves-light btn">Save</a>
-        <a {{action 'toggleForm'}} class="waves-effect waves-light btn">Close</a>
-
+        <a {{action 'toggleAnswerForm'}} class="waves-effect waves-light btn">Close</a>
         </form>
-      </div>
-    </div>
-  </div>
-</div>
-
 {{else}}
-<a {{action 'toggleForm' answer}} class="waves-effect waves-light btn">Add Answer</a>
+<a {{action 'toggleAnswerForm' answer}} class="waves-effect waves-light btn">Add Answer</a>
 {{/if}}

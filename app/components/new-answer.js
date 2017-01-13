@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   addNewAnswer: false,
   actions: {
-    toggleForm() {
+    toggleAnswerForm() {
       this.toggleProperty('addNewAnswer');
     },
     saveAnswer(){
