@@ -1,0 +1,39 @@
+{ "questions": [{
+  "content": "why it be like it is?",
+  "author": "Billy",
+  "notes": "I guess I just don't understand"
+  },{
+    "content": "Are stars alive?",
+    "author": "Jimmy",
+    "notes": "Because like they move around every night"
+  },{
+    "content": "Can I eat dis?",
+    "author": "Billy",
+    "notes": "It look lik food"
+  },{
+    "content": "Bats are bugs?",
+    "author": "Calvin",
+    "notes": "They look like they are so I"
+  },{
+    "content": "six times ten?",
+    "author": "Jimmy",
+    "notes": "I have math test"
+  },{
+  "content": "What's is the meaning anyway?",
+  "author": "Billy",
+  "notes": "Are we just here to breed and die?"
+  }],
+  "answers": [{
+    "content": "I'm not sure.",
+    "author": "Suzy"
+  },{
+    "content": "Because it do.",
+    "author": "Suzy"
+  },{
+    "content": "I think so.",
+    "author": "Jimmy"
+  },{
+    "content": "Probably",
+    "author": "Suzy"
+    }]
+}
