@@ -1,7 +1,7 @@
 { "questions": [{
   "content": "why it be like it is?",
   "author": "Billy",
-  "notes": "I guess I just don't understand"
+  "notes": "I guess I just don't understand",
   },{
     "content": "Are stars alive?",
     "author": "Jimmy",
@@ -22,18 +22,5 @@
   "content": "What's is the meaning anyway?",
   "author": "Billy",
   "notes": "Are we just here to breed and die?"
-  }],
-  "answers": [{
-    "content": "I'm not sure.",
-    "author": "Suzy"
-  },{
-    "content": "Because it do.",
-    "author": "Suzy"
-  },{
-    "content": "I think so.",
-    "author": "Jimmy"
-  },{
-    "content": "Probably",
-    "author": "Suzy"
-    }]
+  }]
 }

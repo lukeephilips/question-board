@@ -1,17 +1,39 @@
 <div class="row">
-  <div class="col s6 offset-s3">
+  <div class="col s8 offset-s2">
     <div class="card green lighten-3">
       <div class="card title green darken-2">
         <h2>{{model.content}}</h2>
       </div>
-          <div class="card-content">
+      <div class="card-content">
           <p>{{model.notes}}</p>
           <p>Asked by: {{model.author}}</p>
-          {{update-question question=model updateQuestion="updateQuestion"}}
-        </div>
+      </div>
         <div class="card-action">
           <a {{action 'destroyQuestion' model}} class="waves-effect waves-light btn">Delete</a>
+          {{update-question question=model updateQuestion="updateQuestion"}}
         </div>
     </div>
   </div>
+</div>
+
+<div class="row">
+  <div class="col s8 offset-s2">
+    {{#if model.answers}}
+      <div class="card green lighten-3">
+          <div class="card title green darken-2">
+            <h2>Answers</h2>
+          </div>
+          <div class="card-content">
+            <ol>
+              {{#each model.answers as |answer|}}
+                <li>{{answer.content}} - {{answer.author}}</li>
+              {{/each}}
+            </ol>
+          </div>
+        </div>
+        {{/if}}
+  </div>
+</div>
+<div class="center">
+  {{new-answer saveAnswer="saveAnswer" question=model}}
 </div>
